@@ -1,8 +1,4 @@
-let serverIP = "192.168.1.4";
-
-window.onload = () => {
-    // serverIP = prompt("Podaj adres IP komputera");
-}
+let serverIP = window.location.host.substring(0, window.location.host.indexOf(':'));
 
 const pressKey = (key) => {
     fetch(`http://${serverIP}:8080/key/${key}`);
