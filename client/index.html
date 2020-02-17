@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdalny pilot</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <meta name="theme-color" content="#000">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <button onclick="pressKey('f11')"><i class="icon-resize-full-alt"></i></button>
+            <button onclick="pressKey('audio_vol_up')"><i class="icon-plus-circled"></i></button>
+            <button onclick="pressKey('audio_vol_down')"><i class="icon-minus-circled"></i></button>
+        </div>
+        <div class="bottom">
+            <button onclick="pressKey('audio_prev')"><i class="icon-to-start"></i></button>
+            <button onclick="pressKey('left')"><i class="icon-left-open"></i></button>
+            <button onclick="pressKey('audio_play'); changeIcon(this)"><i class="icon-play-circled"></i></button>
+            <button onclick="pressKey('right')"><i class="icon-right-open"></i></button>
+            <button onclick="pressKey('audio_next')"><i class="icon-to-end"></i></button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
